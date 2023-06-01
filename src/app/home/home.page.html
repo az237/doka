@@ -1,20 +1,48 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content fullscreen="true" color="tertiary">
+  <div class="text-center pt-7">
+    <img class="w-48 inline" src="assets/images/logo-texte.png">
+  </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="p-3 justify-center space-y-2 text-center mt-2">
+    <div class="px-24">
+      <ion-button routerLink="../login" expand="block" fill="solid" color="light" class="text-base font-semibold capitalize">
+        <ion-icon slot="start" name="person"></ion-icon>
+        {{currentUser ? currentUser.pseudo : '...'}}
+      </ion-button>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <ion-button routerLink="../register" expand="block" shape="round" fill="clear" color="light" class="mt-3 text-base font-semibold capitalize">
+        MENU PRINCIPAL
+      </ion-button>
+
+      <ion-button routerLink="../login" expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
+        Jouer
+      </ion-button>
+
+      <ion-button routerLink="../login" expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
+        Statistiques
+      </ion-button>
+
+      <ion-button routerLink="../login" expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
+        Classement
+      </ion-button>
+
+      <ion-button routerLink="../login" expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
+        Boutique
+      </ion-button>
+
+      <ion-button routerLink="../login" expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
+        Reompenses
+      </ion-button>
+
+      <ion-button routerLink="../login" expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
+        Paramètres
+      </ion-button>
+
+      <ion-button (click)="logOut()" expand="block" fill="solid" color="secondary" class="text-base font-semibold capitalize">
+        Quitter le jeu
+      </ion-button>
+    </div>
   </div>
 </ion-content>
+
+<app-footer></app-footer>

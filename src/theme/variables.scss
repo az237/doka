@@ -1,31 +1,84 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+/*
+@font-face {
+  font-family: AppFont;
+  src: url("../assets/fonts/Dinot-Font/DINOT-Light.otf");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+@font-face {
+  font-family: AppFont;
+  src: url("../assets/fonts/Dinot-Font/DINOT-Light.otf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: AppFont;
+  src: url("../assets/fonts/Dinot-Font/Dinot Font.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: AppFont;
+  src: url("../assets/fonts/Dinot-Font/DINOT-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: AppFont;
+  src: url("../assets/fonts/Dinot-Font/DINOT-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: AppFont;
+  src: url("../assets/fonts/Dinot-Font/DINOT-Black.otf");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 /** Ionic CSS Variables **/
 :root {
+
+  --ion-font-family: "AppFont", sans-serif !important;
+
   /** primary **/
-  --ion-color-primary: #3880ff;
-  --ion-color-primary-rgb: 56, 128, 255;
-  --ion-color-primary-contrast: #ffffff;
-  --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint: #4c8dff;
+  --ion-color-primary: #D09100;
+  --ion-color-primary-rgb: 208,145,0;
+  --ion-color-primary-contrast: #000000;
+  --ion-color-primary-contrast-rgb: 0,0,0;
+  --ion-color-primary-shade: #b78000;
+  --ion-color-primary-tint: #d59c1a;
 
   /** secondary **/
-  --ion-color-secondary: #3dc2ff;
-  --ion-color-secondary-rgb: 61, 194, 255;
-  --ion-color-secondary-contrast: #ffffff;
-  --ion-color-secondary-contrast-rgb: 255, 255, 255;
-  --ion-color-secondary-shade: #36abe0;
-  --ion-color-secondary-tint: #50c8ff;
+  --ion-color-secondary: #FFC747;
+  --ion-color-secondary-rgb: 255,199,71;
+  --ion-color-secondary-contrast: #000000;
+  --ion-color-secondary-contrast-rgb: 0,0,0;
+  --ion-color-secondary-shade: #e0af3e;
+  --ion-color-secondary-tint: #ffcd59;
 
   /** tertiary **/
-  --ion-color-tertiary: #5260ff;
-  --ion-color-tertiary-rgb: 82, 96, 255;
+  --ion-color-tertiary: #000000;
+  --ion-color-tertiary-rgb: 0,0,0;
   --ion-color-tertiary-contrast: #ffffff;
-  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
-  --ion-color-tertiary-shade: #4854e0;
-  --ion-color-tertiary-tint: #6370ff;
+  --ion-color-tertiary-contrast-rgb: 255,255,255;
+  --ion-color-tertiary-shade: #000000;
+  --ion-color-tertiary-tint: #1a1a1a;
 
   /** success **/
   --ion-color-success: #2dd36f;
