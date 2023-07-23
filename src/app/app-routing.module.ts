@@ -29,6 +29,10 @@ const routes: Routes = [
     //canActivate: [NoAuthGuardService],
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'play',
+    loadChildren: () => import('./play/play.module').then( m => m.PlayPageModule)
+  },
 ];
 
 @NgModule({

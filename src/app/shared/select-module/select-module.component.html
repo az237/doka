@@ -1,0 +1,36 @@
+<div class="content-component h-screen w-screen z-0">
+  <div class="absolute h-screen w-screen bg-black opacity-75 z-10"></div>
+  <div class="flex h-screen items-center justify-center">
+    <div class="z-20 space-y-3">
+      <div class="text-xl font-semibold text-orange-500 uppercase w-full text-center">
+        MODULES DE QUESTIONS
+      </div>
+
+      <div class="grid grid-cols-2 gap-3 px-5">
+        <ion-button *ngFor="let item of paginate()" expand="block" fill="solid" color="secondary" class="text-sm font-semibold capitalize">
+          {{ item }}
+        </ion-button>
+      </div>
+
+      <ul class="pagination text-white flex justify-center space-x-2 py-5">
+        <li>
+          <ion-button (click)="currentPage = currentPage - 1" [disabled]="currentPage === 1" expand="block" shape="round" fill="solid" color="light" class="text-base font-semibold capitalize">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 rotate-180 text-orange-500">
+              <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+            </svg>
+          </ion-button>
+          Précedent
+        </li>
+        <li class="text-center">
+          <ion-button (click)="currentPage = currentPage + 1" [disabled]="currentPage === pages.length" expand="block" shape="round" fill="solid" color="light" class="text-base font-semibold capitalize">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-orange-500">
+              <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+            </svg>
+          </ion-button>
+          Suivant
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
