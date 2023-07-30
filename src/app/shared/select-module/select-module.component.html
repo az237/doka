@@ -2,15 +2,15 @@
   <div class="absolute h-screen w-screen bg-black opacity-50 z-10"></div>
   <div class="flex h-screen justify-center">
     <div class="z-20 space-y-3">
-      <div class="text-center my-12">
-        <img class="w-48 inline z-10" src="assets/images/elipsoide.png">
+      <div class="text-center my-8">
+        <img class="w-36 inline z-10" src="assets/images/elipsoide.png">
       </div>
       <div class="text-xl font-semibold text-white uppercase w-full text-center">
         MODULES
       </div>
 
       <div class="grid grid-cols-2 gap-3 px-5">
-        <ion-button *ngFor="let item of paginate()" expand="block" fill="solid" color="primary" class="text-sm font-semibold capitalize">
+        <ion-button (click)="playService.currentPlay.module = i" *ngFor="let item of paginate(); let i = index" expand="block" fill="solid" color="primary" class="text-sm font-semibold capitalize">
           {{ item }}
         </ion-button>
       </div>

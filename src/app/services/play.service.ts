@@ -9,7 +9,8 @@ export class PlayService {
     level: 0,
     typeQuestion: 0,
     module: 0,
-    mode: 0
+    mode: 0,
+    etat: 0
   };
 
   constructor() { }

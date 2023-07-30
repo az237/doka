@@ -5,9 +5,9 @@
   <app-select-type-choice *ngIf="playService.currentPlay.level !== 0 && playService.currentPlay.typeQuestion === 0"></app-select-type-choice>
   <app-select-module *ngIf="playService.currentPlay.typeQuestion !== 0 && playService.currentPlay.module === 0"></app-select-module>
   <app-select-mode *ngIf="playService.currentPlay.module !== 0 && playService.currentPlay.mode === 0"></app-select-mode>
-  <app-loading-game *ngIf="playService.currentPlay.mode !== 0"></app-loading-game>
-  <app-current-play></app-current-play>
-  <app-recap-play></app-recap-play>
+  <app-loading-game *ngIf="playService.currentPlay.mode !== 0 && playService.currentPlay.etat === 0"></app-loading-game>
+  <app-current-play *ngIf="playService.currentPlay.etat === 1"></app-current-play>
+  <app-recap-play *ngIf="playService.currentPlay.etat === 2"></app-recap-play>
 </ion-content>
 
 <app-footer></app-footer>

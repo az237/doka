@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {PlayService} from "../../services/play.service";
 
 @Component({
   selector: 'app-select-module',
@@ -12,7 +13,7 @@ export class SelectModuleComponent implements OnInit {
   pageSize: number = 10; // Le nombre d'éléments à afficher par page
   currentPage: number = 1; // La page actuelle
 
-  constructor() { }
+  constructor(public playService: PlayService) { }
 
   ngOnInit() {}
 

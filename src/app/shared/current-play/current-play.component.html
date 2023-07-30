@@ -6,7 +6,9 @@
         <div class="py-5 justify-center text-center">
           <div class="grid grid-cols-5 gap-0 my-3 justify-center items-center">
             <span class="col-span-2 bg-black text-white h-fit text-center text-sm py-1 rounded-r-full">Question N°</span>
-            <img class="w-full h-fit border-black rounded-full border-4" src="assets/images/photo-maitre.png">
+            <div class="text-center">
+              <img class="w-16 h-16 border-black rounded-full border-4 inline-block" src="assets/images/photo-maitre.png">
+            </div>
             <span class="col-span-2 bg-black text-white h-fit text-center text-sm py-1 rounded-l-full">Difficulté : </span>
           </div>
           <img class="w-10 inline-block" src="assets/images/guillemet.png">
@@ -18,7 +20,7 @@
           </span>
         </div>
 
-        <ion-progress-bar class="h-2" color="primary" type="indeterminate"></ion-progress-bar>
+        <!--ion-progress-bar class="h-2" color="primary" type="indeterminate"></ion-progress-bar-->
 
         <div class="w-full h-3 bg-gray-300 rounded-b-lg"></div>
       </div>
@@ -31,10 +33,10 @@
       </div>
 
       <div class="m-1 grid grid-cols-2 gap-3">
-        <ion-button expand="block" fill="solid" color="success" class="text-base font-semibold capitalize">
+        <ion-button (click)="playService.currentPlay.etat = 2" expand="block" fill="solid" color="success" class="text-base font-semibold capitalize">
           Valider
         </ion-button>
-        <ion-button expand="block" fill="solid" color="danger" class="text-base font-semibold capitalize">
+        <ion-button href="home" expand="block" fill="solid" color="danger" class="text-base font-semibold capitalize">
           Quitter la partie
         </ion-button>
       </div>

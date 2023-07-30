@@ -6,19 +6,19 @@
         MODE DE JEU
       </div>
 
-      <ion-button expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
+      <ion-button (click)="playService.currentPlay.mode = 1" expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
         Solo Classique
       </ion-button>
 
-      <ion-button expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
+      <ion-button (click)="playService.currentPlay.mode = 2" expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
         Solo Chrono
       </ion-button>
 
-      <ion-button expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
+      <ion-button (click)="playService.currentPlay.mode = 3" expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
         Duel Classique
       </ion-button>
 
-      <ion-button expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
+      <ion-button (click)="playService.currentPlay.mode = 4" expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
         Duel Chrono
       </ion-button>
     </div>
