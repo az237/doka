@@ -6,11 +6,11 @@
         CHOIX DES QUESTIONS
       </div>
 
-      <ion-button expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
+      <ion-button (click)="playService.currentPlay.typeQuestion = 1" expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
         Aléatoire
       </ion-button>
 
-      <ion-button expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
+      <ion-button (click)="playService.currentPlay.typeQuestion = 2" expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
         Par module
       </ion-button>
     </div>

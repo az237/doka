@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParametrePage implements OnInit {
 
+  faqCurrentOpen = -1;
+
   constructor() { }
 
   ngOnInit() {

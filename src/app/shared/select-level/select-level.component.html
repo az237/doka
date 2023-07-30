@@ -6,22 +6,21 @@
         Niveau de jeu
       </div>
 
-      <ion-button expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
+      <ion-button (click)="playService.currentPlay.level = 1" expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
         Débutant
       </ion-button>
 
-      <ion-button expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
+      <ion-button (click)="playService.currentPlay.level = 2" expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
         Intermédiaire
       </ion-button>
 
-      <ion-button expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
+      <ion-button (click)="playService.currentPlay.level = 3" expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
         Expert
       </ion-button>
 
-      <ion-button expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
+      <ion-button (click)="playService.currentPlay.level = 4" expand="block" fill="solid" color="primary" class="text-base font-semibold capitalize">
         Aléatoire
       </ion-button>
     </div>
   </div>
-
 </div>

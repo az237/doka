@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {PlayService} from "../../services/play.service";
 
 @Component({
   selector: 'app-select-level',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectLevelComponent implements OnInit {
 
-  constructor() { }
+  constructor(public playService: PlayService) { }
 
   ngOnInit() {}
 

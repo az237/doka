@@ -10,19 +10,42 @@
         <p class="py-1"></p>
 
         <div class="space-y-3">
-          <ion-button routerLink="../statistique" fill="solid" color="primary" class="text-base font-semibold capitalize">
+          <ion-button id="open-modal-update-account" fill="solid" color="primary" class="text-base font-semibold capitalize">
             Modifier
           </ion-button> <br>
           <ion-button routerLink="../statistique" fill="solid" color="primary" class="text-base font-semibold capitalize">
             Supprimer
           </ion-button> <br>
-          <ion-button routerLink="../statistique" fill="solid" color="primary" class="text-base font-semibold capitalize">
+          <ion-button fill="solid" color="primary" class="text-base font-semibold capitalize">
             Mise à niveau
           </ion-button>
         </div>
       </div>
     </div>
   </div>
+
+  <ion-modal #modalUpdateAccount trigger="open-modal-update-account" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+    <ng-template>
+      <div class="block bg-yellow-500">
+        <div class="w-full bg-black text-white text-center font-medium text-xl mt-10">
+          Modifier compte
+        </div>
+        <form class="p-3 space-y-3">
+          <ion-input type="text" label="Outline input" label-placement="floating" fill="outline" placeholder="Pseudo" class="bg-white rounded-md"></ion-input>
+          <ion-input type="tel" label="Outline input" label-placement="floating" fill="outline" placeholder="Téléphone" class="bg-white rounded-md"></ion-input>
+        </form>
+
+        <div class="p-3 justify-center text-center grid grid-cols-2">
+          <ion-button (click)="modalUpdateAccount.dismiss()" fill="solid" color="danger" class="text-base inline-block font-semibold capitalize">
+            Réinitialisé passe
+          </ion-button>
+          <ion-button (click)="modalUpdateAccount.dismiss()" fill="solid" color="primary" class="text-base inline-block font-semibold capitalize">
+            Enregistrer
+          </ion-button>
+        </div>
+      </div>
+    </ng-template>
+  </ion-modal>
 </ion-content>
 
 <app-footer></app-footer>

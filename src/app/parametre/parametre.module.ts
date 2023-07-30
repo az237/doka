@@ -7,13 +7,17 @@ import { IonicModule } from '@ionic/angular';
 import { ParametrePageRoutingModule } from './parametre-routing.module';
 
 import { ParametrePage } from './parametre.page';
+import {StatistiquePageModule} from "../statistique/statistique.module";
+import {AskLoginRegisterPageModule} from "../ask-login-register/ask-login-register.module";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ParametrePageRoutingModule
+    ParametrePageRoutingModule,
+    StatistiquePageModule,
+    AskLoginRegisterPageModule
   ],
   declarations: [ParametrePage]
 })
