@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import {AskLoginRegisterPageModule} from "../ask-login-register/ask-login-register.module";
+import {StatistiquePageModule} from "../statistique/statistique.module";
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import {AskLoginRegisterPageModule} from "../ask-login-register/ask-login-regist
         FormsModule,
         IonicModule,
         HomePageRoutingModule,
-        AskLoginRegisterPageModule
+        AskLoginRegisterPageModule,
+        StatistiquePageModule
     ],
   declarations: [HomePage]
 })

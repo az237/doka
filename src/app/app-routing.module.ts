@@ -33,6 +33,22 @@ const routes: Routes = [
     path: 'play',
     loadChildren: () => import('./play/play.module').then( m => m.PlayPageModule)
   },
+  {
+    path: 'statistique',
+    loadChildren: () => import('./statistique/statistique.module').then( m => m.StatistiquePageModule)
+  },
+  {
+    path: 'classement',
+    loadChildren: () => import('./classement/classement.module').then( m => m.ClassementPageModule)
+  },
+  {
+    path: 'compte',
+    loadChildren: () => import('./compte/compte.module').then( m => m.ComptePageModule)
+  },
+  {
+    path: 'parametre',
+    loadChildren: () => import('./parametre/parametre.module').then( m => m.ParametrePageModule)
+  }
 ];
 
 @NgModule({

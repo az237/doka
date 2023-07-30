@@ -1,0 +1,46 @@
+<app-header></app-header>
+
+<ion-content fullscreen="true">
+  <div class="absolute h-screen w-screen bg-black opacity-75"></div>
+  <div class="flex h-screen justify-center items-center">
+    <div class="z-20 space-y-3 p-3 w-screen">
+      <div class="bg-yellow-500 text-xl font-medium space-y-1 rounded-xl text-center pb-5">
+        <h6 class="text-orange-500 text-2xl mt-2 font-bold bg-white text-center w-fit inline-block rounded-md px-3 py-1 shadow-md">CLASSEMENT</h6>
+        <p class="py-1"></p>
+        <ion-segment value="1" class="text-xs">
+          <ion-segment-button value="1">
+            <ion-label>JOUR</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="2">
+            <ion-label>SEMAINE</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="3">
+            <ion-label>MOIS</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="4">
+            <ion-label>GENERAL</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+
+        <div>
+          <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+              <tbody>
+                <tr *ngFor="let joueur of ['Joueur 1', 'Joueur 2', 'joueur 3']; let i = index" class="{{ i%2 === 0 ? 'bg-white' : 'bg-orange-100'}} border-b dark:bg-gray-900 dark:border-gray-700">
+                  <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-white">
+                    {{joueur}}
+                  </th>
+                  <td class="px-6 py-4 text-right text-black">
+                    Silver
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<app-footer></app-footer>

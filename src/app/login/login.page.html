@@ -1,24 +1,27 @@
 <ion-content fullscreen="true" class="bg-cover">
-  <div class="absolute h-screen w-screen bg-black opacity-75 z-0"></div>
-  <div class="flex h-screen items-center justify-center">
+  <div class="absolute h-screen w-screen bg-black opacity-50 z-0"></div>
+  <div class="flex h-screen justify-center">
+    <div class="z-10 text-center space-y-5">
+      <div class="text-center my-20">
+        <img class="w-48 inline z-10" src="assets/images/logo-texte.png">
+      </div>
+      <form #form="ngForm" (ngSubmit)="connexion(form)" class="text-center z-10 space-y-2">
 
-    <form #form="ngForm" (ngSubmit)="connexion(form)" class="text-center z-10 space-y-2">
+        <label for="email" class="block text-sm font-medium text-white dark:text-white">Adresse e-mail</label>
+        <input ngModel type="email" name="email" id="email" class="bg-yellow-900 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
 
-      <label for="email" class="block text-sm font-medium text-white dark:text-white">Adresse e-mail</label>
-      <input ngModel type="email" name="email" id="email" class="bg-yellow-900 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
-
-      <label for="password" class="block text-sm font-medium text-white dark:text-white">Mot de passe</label>
-      <input ngModel type="password" name="password" id="password" class="bg-yellow-900 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
-      <br>
-      <ion-button [disabled]="form.invalid" type="submit" fill="solid" color="primary" class="text-base font-semibold capitalize inline-block">
-        Se connecter
-      </ion-button>
-      <br>
-      <ion-button routerLink="../ask-login-register" shape="round" fill="clear" color="primary" class="text-base font-semibold capitalize inline-block">
-        Retourner
-      </ion-button>
-    </form>
-
+        <label for="password" class="block text-sm font-medium text-white dark:text-white">Mot de passe</label>
+        <input ngModel type="password" name="password" id="password" class="bg-yellow-900 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+        <br>
+        <ion-button [disabled]="form.invalid" type="submit" fill="solid" color="primary" class="text-base font-semibold capitalize inline-block">
+          Se connecter
+        </ion-button>
+        <br>
+        <ion-button routerLink="../ask-login-register" shape="round" fill="clear" color="primary" class="text-base font-semibold capitalize inline-block">
+          Retourner
+        </ion-button>
+      </form>
+    </div>
   </div>
 </ion-content>
 

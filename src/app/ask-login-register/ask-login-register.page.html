@@ -1,18 +1,20 @@
 <ion-content fullscreen="true">
-  <div class="absolute h-screen w-screen bg-black opacity-75 z-0"></div>
-  <div class="flex h-screen items-center justify-center">
+  <div class="absolute h-screen w-screen bg-black opacity-50 z-0"></div>
+  <div class="flex h-screen justify-center">
     <div class="z-10 text-center space-y-5">
-      <div class="text-center">
-        <img class="w-56 inline z-10" src="assets/images/logo-texte.png">
+      <div class="text-center my-20">
+        <img class="w-48 inline z-10" src="assets/images/logo-texte.png">
       </div>
       <br>
       <ion-button routerLink="../login" fill="solid" color="primary" class="text-base font-semibold capitalize">
         Se connecter
       </ion-button>
-
-      <ion-button routerLink="../register" shape="round" fill="clear" color="primary" class="text-base font-semibold capitalize">
+      <br>
+      <ion-button routerLink="../register" fill="solid" color="primary" class="text-base font-semibold capitalize">
         S'incrire
       </ion-button>
+      <br>
+      <p class="text-gray-200 text-xs">Si vous n’avez pas encore de compte</p>
     </div>
   </div>
 </ion-content>

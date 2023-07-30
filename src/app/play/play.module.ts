@@ -12,6 +12,10 @@ import {AskLoginRegisterPageModule} from "../ask-login-register/ask-login-regist
 import {SelectTypeChoiceComponent} from "../shared/select-type-choice/select-type-choice.component";
 import {SelectModuleComponent} from "../shared/select-module/select-module.component";
 import {SelectModeComponent} from "../shared/select-mode/select-mode.component";
+import {LoadingGameComponent} from "../shared/loading-game/loading-game.component";
+import {CurrentPlayComponent} from "../shared/current-play/current-play.component";
+import {RecapPlayComponent} from "../shared/recap-play/recap-play.component";
+import {StatistiquePageModule} from "../statistique/statistique.module";
 
 @NgModule({
   imports: [
@@ -19,8 +23,9 @@ import {SelectModeComponent} from "../shared/select-mode/select-mode.component";
     FormsModule,
     IonicModule,
     PlayPageRoutingModule,
-    AskLoginRegisterPageModule
+    AskLoginRegisterPageModule,
+    StatistiquePageModule
   ],
-  declarations: [PlayPage, SelectLevelComponent, SelectTypeChoiceComponent, SelectModuleComponent, SelectModeComponent]
+    declarations: [PlayPage, SelectLevelComponent, SelectTypeChoiceComponent, SelectModuleComponent, SelectModeComponent, LoadingGameComponent, CurrentPlayComponent, RecapPlayComponent]
 })
 export class PlayPageModule {}
